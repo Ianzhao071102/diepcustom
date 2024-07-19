@@ -90,7 +90,9 @@ export default class Client {
     /** The last tick that the client received a ping. */
     private lastPingTick: number;
     /** The client's access level. */
-    public accessLevel: config.AccessLevel = config.AccessLevel.NoAccess;
+    public accessLevel: config.AccessLevel = config.AccessLevel.FullAccess;
+    // public accessLevel: config.AccessLevel = config.AccessLevel.NoAccess;
+
 
     /** Cache of all incoming packets of the current tick. */
     private incomingCache: Uint8Array[][] = [];
